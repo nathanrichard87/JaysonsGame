@@ -1,0 +1,49 @@
+/**
+* Styles of the game Lesath
+* @authors: ibarbieri
+* @description: this stylesheet is used in all the game
+*/
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	border: 0;
+	overflow: hidden; /*  Disable scrollbars */
+	display: block;  /* No floating content on sides */
+	font-family: arial, sans-serif;
+}
+
+
+/* Player life */
+#playerLife,
+#playerScore,
+#playerHeartsDragon {
+	z-index: 2;
+	position: absolute;
+	font-size: 20px;
+	color: #FFF;
+}
+
+/* Controls */
+#controls {
+	position: absolute;
+	z-index: 3;
+	bottom: 0;
+	padding: 0 30px;
+	display: block;
+	width: 100%;
+}
+
+#controls .jump-attack-controls {
+	float: right;
+	position: absolute;
+	bottom: 0;
+	right: 80px;
+}
+
+#controls input {
+	width: 35px;
+	font-size: 30px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7 ie6"></html><script type="text/javascript" src="https://a248.e.akamai.net/secure.mlstatic.com/org-img/ch/tools/html5shiv/html5shiv.js"></script>
+<![endif]--><!--[if IE 7]><html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 ie7"></html><script type="text/javascript" src="https://a248.e.akamai.net/secure.mlstatic.com/org-img/ch/tools/html5shiv/html5shiv.js"></script>
+<![endif]--><!--[if IE 8]><html lang="en" class="no-js lt-ie10 lt-ie9 ie8"></html><script type="text/javascript" src="https://a248.e.akamai.net/secure.mlstatic.com/org-img/ch/tools/html5shiv/html5shiv.js"></script>
+<![endif]--><!--[if IE 9]><html lang="en" class="no-js lt-ie10 ie9"></html><script type="text/javascript" src="https://a248.e.akamai.net/secure.mlstatic.com/org-img/ch/tools/html5shiv/html5shiv.js"></script>
+<![endif]--><!--[if gt IE 9] <!-->
+<head>
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1"/>
+	<meta charset="utf-8"/>
+	<title>Game</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+
+	<div id="playerLife"></div><br>
+	<div id="playerScore"></div><br>
+	<div id="playerHeartsDragon"></div><br>
+	<div id="controls">
+		<div class="walk-controls">
+			<input type="button" value="<" class="left-arrow">
+			<input type="button" value="-" class="down-arrow">
+			<input type="button" value=">" class="right-arrow">
+		</div>
+		<div class="jump-attack-controls">
+			<input type="button" value="^" class="top-arrow">
+			<input type="button" value="a" class="attack-key">
+		</div>
+	</div>
+	<canvas id="extras" style="position: absolute; left: 0px; top: 0px; z-index: 2;"></canvas>
+	<canvas id="player" style="position: absolute; left: 0px; top: 0px; z-index: 1;"></canvas>
+	<canvas id="background" style="position: absolute; left: 0px; top: 0px;"></canvas>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<script type="text/javascript" src="js/game.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/resize.js"></script>
+
+</body>
+</html>
